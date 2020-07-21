@@ -1,0 +1,7 @@
+# cat install_k8s/main.yml
+
+- hosts: k8s-master
+  become: yes
+  user: ubuntu
+  roles:
+  - { role: deploy-app, tags: ["deploy_app_role"]  }

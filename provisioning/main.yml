@@ -1,0 +1,4 @@
+# vim provisioning/main.yml
+- hosts: local
+  roles:
+  - criando-instancias
